@@ -1,3 +1,6 @@
 [submodule "github.com/powerline-fonts"]
 	path = github.com/powerline-fonts
 	url = git@github.com:powerline/fonts.git
+[submodule "github.com/plugins/zsh-autosuggestions"]
+	path = github.com/plugins/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git

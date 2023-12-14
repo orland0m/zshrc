@@ -1,0 +1,34 @@
+#!/usr/bin/env zsh
+
+ZSHRC_SCRIPT_DIR=${0:a:h}
+export ZSHRC_RUNTIME=$ZSHRC_SCRIPT_DIR/..
+
+# 1. Configure Oh My Zsh
+source $ZSHRC_RUNTIME/config/zshrc.omz
+
+# 2. Configure platform specific settings
+case "$(uname -s)" in
+   Darwin)
+       source $ZSHRC_RUNTIME/config/zshrc.macos
+     ;;
+   *)
+       source $ZSHRC_RUNTIME/config/zshrc.linux
+     ;;
+esac
+
+# 3. Configure SSH specific settings
+if [ "$SSH_CONNECTION" ]; then
+    source $ZSHRC_RUNTIME/config/zshrc.ssh
+fi
+
+## 4. Configure general settings
+# Alias
+alias la='ls -a'
+alias ll='ls -la'
+alias grep='grep --color=auto'
+alias cls='clear;ls'
+alias vim="nvim"
+alias vi="nvim"
+alias diff="colordiff"
+
+eval "$(ssh-agent -s)" &>/dev/null
