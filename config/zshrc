@@ -3,10 +3,10 @@
 ZSHRC_SCRIPT_DIR=${0:a:h}
 export ZSHRC_RUNTIME=$ZSHRC_SCRIPT_DIR/..
 
-# 1. Configure Oh My Zsh
+# 1. Configure basic Oh My Zsh settings
 source $ZSHRC_RUNTIME/config/zshrc.omz
 
-# 2. Configure platform specific settings
+# 2. Configure platform specific overrides
 case "$(uname -s)" in
    Darwin)
        source $ZSHRC_RUNTIME/config/zshrc.macos
@@ -16,19 +16,13 @@ case "$(uname -s)" in
      ;;
 esac
 
-# 3. Configure SSH specific settings
+# 3. Configure SSH specific overrides
 if [ "$SSH_CONNECTION" ]; then
     source $ZSHRC_RUNTIME/config/zshrc.ssh
 fi
 
-## 4. Configure general settings
-# Alias
-alias la='ls -a'
-alias ll='ls -la'
-alias grep='grep --color=auto'
-alias cls='clear;ls'
-alias vim="nvim"
-alias vi="nvim"
-alias diff="colordiff"
+# 4. Activate Oh My Zsh
+source $ZSH/oh-my-zsh.sh
 
-eval "$(ssh-agent -s)" &>/dev/null
+## 5. Any last changes?
+source $ZSHRC_RUNTIME/config/zshrc.last

@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+alias la='ls -a'
+alias ll='ls -la'
+alias grep='grep --color=auto'
+alias cls='clear;ls'
+alias vim="nvim"
+alias vi="nvim"
+alias diff="colordiff"
+
+eval "$(ssh-agent -s)" &>/dev/null

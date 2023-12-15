@@ -12,15 +12,12 @@ if [ -f "$USER_ZSHRC" ]; then
     rm $USER_ZSHRC
 fi
 
-echo "2. Install Oh My Zsh (!!! Leave inner shell on completion !!!)"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "2. Install Oh My Zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-echo "3. Remove default OMZ configuration, already have in this repository"
-rm $USER_ZSHRC
-
-echo "5. Invoke main script in ~/.zshrc"
+echo "3. Invoke main script in ~/.zshrc"
 printf "#!/usr/bin/env zsh\n\n" > $USER_ZSHRC
 printf "source $SCRIPT_DIR/config/zshrc\n" >> $USER_ZSHRC
 
-echo "6. Custom adhoc commads"
-source config/once_on_install.zsh
+echo "4. Custom adhoc commads"
+source $SCRIPT_DIR/config/once_on_install.zsh
