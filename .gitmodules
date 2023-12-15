@@ -4,3 +4,12 @@
 [submodule "github.com/plugins/zsh-autosuggestions"]
 	path = github.com/plugins/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "github.com/plugins/zsh-syntax-highlighting"]
+	path = github.com/plugins/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+[submodule "github.com/plugins/F-Sy-H"]
+	path = github.com/plugins/F-Sy-H
+	url = git@github.com:zdharma/fast-syntax-highlighting.git
+[submodule "github.com/plugins/zsh-autocomplete"]
+	path = github.com/plugins/zsh-autocomplete
+	url = git@github.com:marlonrichert/zsh-autocomplete.git
