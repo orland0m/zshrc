@@ -6,7 +6,6 @@ HYPHEN_INSENSITIVE="true"
 ZSH_THEME="gallois"
 # ZSH_THEME="agnoster"
 ZSH_CUSTOM=$ZSHRC_RUNTIME/github.com
-# ZSH_AUTOSUGGEST_STRATEGY=completion
 
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 30
