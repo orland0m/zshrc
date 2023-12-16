@@ -7,5 +7,3 @@ alias cls='clear;ls'
 alias vim="nvim"
 alias vi="nvim"
 alias diff="colordiff"
-
-eval "$(ssh-agent -s)" &>/dev/null

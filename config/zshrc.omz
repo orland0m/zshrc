@@ -10,6 +10,7 @@ ZSH_CUSTOM=$ZSHRC_RUNTIME/github.com
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 30
 zstyle ':omz:update' verbose minimal
+zstyle :omz:plugins:ssh-agent lazy yes
 
 plugins=(
     git
@@ -23,4 +24,5 @@ plugins=(
     zsh-syntax-highlighting
     F-Sy-H
     zsh-autocomplete
+    ssh-agent
 )
