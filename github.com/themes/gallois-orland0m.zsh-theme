@@ -1,4 +1,4 @@
-# Custom fork from: https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/gallois.zsh-theme
+# This is a fork from: https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/gallois.zsh-theme
 
 autoload -U colors && colors
 

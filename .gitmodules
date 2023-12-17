@@ -13,3 +13,6 @@
 [submodule "github.com/plugins/zsh-autocomplete"]
 	path = github.com/plugins/zsh-autocomplete
 	url = git@github.com:marlonrichert/zsh-autocomplete.git
+[submodule "github.com/orland0m/shell-utils"]
+	path = github.com/orland0m/shell-utils
+	url = git@github.com:orland0m/shell-utils.git
