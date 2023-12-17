@@ -23,6 +23,7 @@ echo "4. Custom adhoc commads"
 source $SCRIPT_DIR/config/once_on_install.zsh
 
 echo "5. Make zsh your default shell"
+# TODO: this fails on Amazon linux
 chsh -s $(which zsh)
 
 echo "6. You may have to re-login to switch to zsh!"
