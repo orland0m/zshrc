@@ -57,16 +57,26 @@ function duration() {
 function host_detail() {
   if [ "$SSH_CONNECTION" ]; 
   then
-        echo "%{$fg[yellow]%}[%n@%m]"
+        echo "%{$fg[cyan]%}[%{$fg[red]%}%n%{$fg[white]%}@%{$fg[yellow]%}%m%{$fg[cyan]%}]"
   else
         echo ""
   fi
 }
 
+function prompt_extras() {
+    if typeset -f zsh_runtime_prompt_prefix_1 > /dev/null; then
+        echo "$(zsh_runtime_prompt_prefix_1)"
+    else
+        echo ""
+    fi
+}
+
 function precmd() {
     RETVAL=$(pipestatus_parse)
     local info=""
-    local prompt_prefix=$(host_detail)
+    local ssh_prefix=$(host_detail)
+    local zsh_runtime_extra_prefix=$(prompt_extras)
+    local prompt_prefix="$ssh_prefix$zsh_runtime_extra_prefix"
 
     if [ ! -z "$last_run_time" ]; then
         local elapsed=$(duration $last_run_time)
@@ -84,7 +94,7 @@ function precmd() {
         unset last_run_time
     fi
 
-    [ -z "$info" ] && custom_prompt="$prompt_prefix$base_prompt" || custom_prompt="$prompt_prefix$info$base_prompt"
+    custom_prompt="$prompt_prefix$info$base_prompt"
 }
 
 setopt PROMPT_SUBST
