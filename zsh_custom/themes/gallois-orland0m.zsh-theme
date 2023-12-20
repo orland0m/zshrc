@@ -64,8 +64,8 @@ function host_detail() {
 }
 
 function prompt_extras() {
-    if typeset -f zsh_runtime_prompt_prefix_1 > /dev/null; then
-        echo "$(zsh_runtime_prompt_prefix_1)"
+    if typeset -f zsh_runtime_prompt_prefix > /dev/null; then
+        echo "$(zsh_runtime_prompt_prefix)"
     else
         echo ""
     fi
