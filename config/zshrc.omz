@@ -25,4 +25,5 @@ plugins=(
     F-Sy-H
     zsh-autocomplete
     ssh-agent
+    aws
 )
