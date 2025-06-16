@@ -15,7 +15,7 @@
     "Green Component" : 0.58039215686274515
   },
   "Use Non-ASCII Font" : false,
-  "Normal Font" : "RobotoMonoForPowerline-Light 18",
+  "Normal Font" : "RobotoMonoForPowerline-Regular 18",
   "Bold Color" : {
     "Red Component" : 0.57647058823529407,
     "Color Space" : "sRGB",
@@ -88,7 +88,7 @@
   "Mouse Reporting" : true,
   "Screen" : -1,
   "Selection Color" : {
-    "Red Component" : 0.027450980392156862,
+    "Red Component" : 0.027450980392156866,
     "Color Space" : "sRGB",
     "Blue Component" : 0.25882352941176473,
     "Green Component" : 0.21176470588235294
@@ -116,9 +116,9 @@
   "Background Color" : {
     "Red Component" : 0.066666666666666666,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.090196078431372548,
+    "Blue Component" : 0.090196078431372534,
     "Alpha Component" : 1,
-    "Green Component" : 0.082352941176470587
+    "Green Component" : 0.082352941176470601
   },
   "Character Encoding" : 4,
   "Ansi 11 Color" : {
@@ -400,7 +400,7 @@
   },
   "Name" : "orland0m",
   "Cursor Text Color" : {
-    "Red Component" : 0.027450980392156862,
+    "Red Component" : 0.027450980392156866,
     "Color Space" : "sRGB",
     "Blue Component" : 0.25882352941176473,
     "Green Component" : 0.21176470588235294
@@ -417,9 +417,14 @@
     "Color Space" : "sRGB",
     "Blue Component" : 0.090728759765625,
     "Alpha Component" : 1,
-    "Green Component" : 0.086032648992634422
+    "Green Component" : 0.086032648992634436
   },
-  "Transparency" : 0.044556183510638295,
+  "Ansi 1 Color" : {
+    "Red Component" : 0.86274509803921573,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.18431372549019609,
+    "Green Component" : 0.19607843137254902
+  },
   "Custom Directory" : "Recycle",
   "Link Color" : {
     "Red Component" : 0,
@@ -428,13 +433,8 @@
     "Alpha Component" : 1,
     "Green Component" : 0.35915294289588928
   },
+  "Transparency" : 0.044556183510638295,
   "Guid" : "49D8CDBA-0617-4B09-B448-D944D3A53A1E",
-  "Ansi 1 Color" : {
-    "Red Component" : 0.86274509803921573,
-    "Color Space" : "sRGB",
-    "Blue Component" : 0.18431372549019609,
-    "Green Component" : 0.19607843137254902
-  },
   "Ansi 3 Color" : {
     "Red Component" : 0.70980392156862748,
     "Color Space" : "sRGB",
@@ -457,7 +457,7 @@
   "Ansi 9 Color" : {
     "Red Component" : 0.79607843137254897,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.086274509803921567,
+    "Blue Component" : 0.086274509803921581,
     "Green Component" : 0.29411764705882354
   },
   "Horizontal Spacing" : 1,
