@@ -3,7 +3,7 @@
 autoload -U colors && colors
 
 NEWLINE=$'\n'
-base_prompt="%{$fg[cyan]%}[%~% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B${NEWLINE}$%b "
+base_prompt="%{$fg[cyan]%}[%~]%(?.%{$fg[green]%}.%{$fg[red]%})%B${NEWLINE}$%b%f "
 custom_prompt=""
 last_run_time=""
 
